@@ -1,4 +1,5 @@
 import express from 'express'
+import cros from 'cors'
 import { PORT } from './config/envoirment.mjs'
 import dataSource from './infrastructure/psql.mjs'
 
@@ -14,6 +15,7 @@ app.listen(PORT,async()=>{
 })
 
 app.use(express.json())
+app.use(cros())
 }
 
 export default startServer
