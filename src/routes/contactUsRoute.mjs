@@ -5,7 +5,7 @@ import contactUs from "../controller/contactUsController.mjs";
 
 const router=express.Router()
 
-router.use('/contact-us',contactUs)
+router.use('/contactus',contactUs)
 
 export default router
 
