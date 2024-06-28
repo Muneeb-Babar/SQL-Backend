@@ -8,6 +8,9 @@ const app=express();
 
 const startServer=async()=>{
 
+    app.get('/',(req,res)=>{
+        res.send('server is running')
+    })
 
 app.listen(PORT,async()=>{
     console.log('Server is ready to use')
