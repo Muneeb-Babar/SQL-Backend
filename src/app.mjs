@@ -2,6 +2,7 @@ import express from 'express'
 import cros from 'cors'
 import { PORT } from './config/envoirment.mjs'
 import dataSource from './infrastructure/psql.mjs'
+import routes from './routes/contactUsRoute.mjs'
 
 const app=express();
 
@@ -16,6 +17,7 @@ app.listen(PORT,async()=>{
 
 app.use(express.json())
 app.use(cros())
+app.use('/',routes)
 }
 
 export default startServer
