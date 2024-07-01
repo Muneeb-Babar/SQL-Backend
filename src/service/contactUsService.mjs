@@ -53,7 +53,7 @@ const contactusService=async(clientData)=>{
         }
     
     catch(e){
-        console.log(e)
+        console.log(e.message)
     }
 }
 export default contactusService
