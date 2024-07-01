@@ -12,7 +12,7 @@ const handlePlan=async(req,res,serviceFunction)=>{
 
         const result=await serviceFunction(clientData)
         if(result){
-            return res.status(200).send({status:200, message:"Client Data Added Successfully",})
+            return res.status(200).send({status:200, message:"Client Data Added Successfully"})
         }
         else{
             return res.status(500).send({status:500, message:"Client Data Not Added Successfully"})
