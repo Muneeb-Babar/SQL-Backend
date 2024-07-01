@@ -19,7 +19,7 @@ const handlePlan=async(req,res,serviceFunction)=>{
         }
     }
     catch(e){
-        console.log(e);
+        console.log(e.message);
     }
 
 }
