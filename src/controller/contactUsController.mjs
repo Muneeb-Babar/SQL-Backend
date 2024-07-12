@@ -27,4 +27,5 @@ const handlePlan=async(req,res,serviceFunction)=>{
 const contactUs=async(req,res)=>{
     await handlePlan(req,res,contactusService)
 }
+
 export default contactUs
