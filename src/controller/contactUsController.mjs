@@ -21,7 +21,6 @@ const handlePlan=async(req,res,serviceFunction)=>{
     catch(e){
         console.log(e.message);
     }
-
 }
 
 const contactUs=async(req,res)=>{
