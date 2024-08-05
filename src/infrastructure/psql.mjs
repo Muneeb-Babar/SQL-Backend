@@ -1,7 +1,7 @@
 import { DataSource } from "typeorm";
 import { DB_PORT, POSTGRES_DB, POSTGRES_PASSWORD, POSTGRES_USER } from "../config/envoirment.mjs";
 import path from 'path';
-import { fileURLToPath } from 'url'; // Importing fileURLToPath for Node.js 14 and above
+import { fileURLToPath } from 'url'; 
 
 // Get the current module file path
 const __filename = fileURLToPath(import.meta.url);
